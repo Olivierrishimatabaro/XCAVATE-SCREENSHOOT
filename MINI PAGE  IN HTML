@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xcavate – Real Estate on Chain</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0e11;
+      color: #ffffff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #1c2331, #12161c);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #4cc9f0;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .feature-box {
+      background: #1a1f27;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      text-align: center;
+      border: 1px solid #29313d;
+    }
+
+    .feature-box h3 {
+      color: #4cc9f0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero">
+    <h1>Xcavate</h1>
+    <p>The future of real-estate is just one click away.</p>
+  </div>
+
+  <div class="features">
+    <div class="feature-box">
+      <h3>Tokenised Buildings</h3>
+      <p>Access real estate like never before.</p>
+    </div>
+
+    <div class="feature-box">

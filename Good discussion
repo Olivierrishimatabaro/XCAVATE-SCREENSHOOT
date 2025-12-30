@@ -1,0 +1,54 @@
+/**
+ * Strategic Discussion Positions
+ * --------------------------------
+ * This module represents structured disagreement
+ * as a first-class citizen in decision-making.
+ */
+
+export type PositionLevel = "soft" | "moderate" | "firm";
+
+export type DiscussionPosition = {
+  id: number;
+  level: PositionLevel;
+  statement: string;
+  intent: string;
+};
+
+export const positions: DiscussionPosition[] = [
+  {
+    id: 1,
+    level: "soft",
+    statement:
+      "Focusing exclusively on realXmarket from the start may overlook other key opportunities within the ecosystem.",
+    intent: "Encourage a broader perspective before narrowing the discussion.",
+  },
+  {
+    id: 2,
+    level: "moderate",
+    statement:
+      "While realXmarket is important, starting only with this aspect feels reductive given the diversity of Xcavate’s opportunities.",
+    intent: "Balance technical depth with ecosystem-wide value.",
+  },
+  {
+    id: 3,
+    level: "firm",
+    statement:
+      "Restricting the discussion to realXmarket alone does not fully reflect Xcavate’s current and evolving value.",
+    intent: "Protect the holistic vision of the project.",
+  },
+];
+
+/**
+ * Utility function
+ * Returns positions filtered by intensity level
+ */
+export function getPositionsByLevel(level: PositionLevel): DiscussionPosition[] {
+  return positions.filter((p) => p.level === level);
+}
+
+/**
+ * Philosophy:
+ * - Disagreement is not opposition
+ * - Structure creates clarity
+ * - Clarity leads to better decisions
+ */
